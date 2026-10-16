@@ -47,7 +47,7 @@ function initEmailCopy() {
   copyButtons.forEach(btn => {
     btn.addEventListener("click", (e) => {
       e.preventDefault();
-      const email = btn.getAttribute("data-email") || "korea_student@korea.ac.kr";
+      const email = btn.getAttribute("data-email") || "leebhy304@korea.ac.kr";
       copyText(email, `이메일 주소(${email})가 복사되었습니다!`);
     });
   });
