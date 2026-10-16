@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="ko" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>학부생 포트폴리오 | 족보 & 학습 솔루션 아키텍트</title>
+  <meta name="description" content="고려대학교 학부생 족보 제작 전문 및 학습 솔루션 아키텍트의 이력서 & 포트폴리오 웹사이트입니다.">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!-- Google Fonts: Pretendard & Outfit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Ambient background glow elements -->
+  <div class="glow-orb glow-top-left" aria-hidden="true"></div>
+  <div class="glow-orb glow-bottom-right" aria-hidden="true"></div>
+
+  <!-- Header / Navigation -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-brand">
+        <span class="crimson-dot"></span>
+        <span class="brand-text">KU<span class="brand-sub">.ARCHIVE</span></span>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#about" class="nav-link">소개</a>
+        <a href="#strengths" class="nav-link">핵심 역량</a>
+        <a href="#timeline" class="nav-link">학력 & 활동</a>
+        <a href="#portfolio" class="nav-link">대표 족보</a>
+        <a href="#contact" class="nav-link">연락처</a>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Print / PDF Action -->
+        <button class="icon-btn" id="printBtn" title="이력서 PDF 인쇄 / 저장" aria-label="이력서 인쇄">
+          <i class="fa-solid fa-print"></i>
+        </button>
+
+        <!-- Theme Toggle Button -->
+        <button class="theme-toggle" id="themeToggle" title="테마 전환" aria-label="다크/라이트 모드 전환">
+          <div class="toggle-track">
+            <span class="toggle-icon sun"><i class="fa-solid fa-sun"></i></span>
+            <span class="toggle-icon moon"><i class="fa-solid fa-moon"></i></span>
+            <div class="toggle-thumb"></div>
+          </div>
+        </button>
+
+        <!-- Mobile Menu Toggle -->
+        <button class="mobile-toggle" id="mobileToggle" aria-label="메뉴 열기">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+      <div class="hero-container">
+        <div class="hero-content">
+          <div class="badge-pill">
+            <span class="badge-pulse"></span>
+            <span class="badge-text">Korea Univ. 족보 & 학습 솔루션 아키텍트</span>
+          </div>
+
+          <h1 class="hero-title">
+            방대한 전공 지식을 <br>
+            <span class="crimson-gradient">A+ 직행 족보</span>로 압축합니다
+          </h1>
+
+          <p class="hero-desc">
+            강의 녹취, 기출 트렌드, 교재 솔루션을 정밀 분석하여
+            <strong>시험 전날 가장 확실하게 통하는 고밀도 학습 바이블</strong>을 만듭니다.
+            공부 시간은 절반으로 줄이고, 학점은 최고점으로 끌어올리는 학부생 전문 족보 제작자입니다.
+          </p>
+
+          <div class="hero-metrics">
+            <div class="metric-card">
+              <div class="metric-val">100<span class="unit">%</span></div>
+              <div class="metric-label">기출 적중 & 솔루션 검증률</div>
+            </div>
+            <div class="metric-card">
+              <div class="metric-val">25<span class="unit">+</span></div>
+              <div class="metric-label">누적 제작 족보 & 요약집</div>
+            </div>
+            <div class="metric-card">
+              <div class="metric-val">0<span class="unit">오류</span></div>
+              <div class="metric-label">유효숫자·단위 무결점 원칙</div>
+            </div>
+          </div>
+
+          <div class="hero-cta-group">
+            <a href="#portfolio" class="btn btn-primary">
+              <i class="fa-solid fa-book-bookmark"></i>
+              대표 족보 둘러보기
+            </a>
+            <button class="btn btn-secondary copy-email-btn" data-email="korea_student@korea.ac.kr">
+              <i class="fa-regular fa-copy"></i>
+              <span>이메일 복사하기</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="hero-card-wrapper">
+          <div class="profile-card glass-panel">
+            <div class="profile-header">
+              <div class="avatar-ring">
+                <div class="avatar-inner">
+                  <i class="fa-solid fa-graduation-cap"></i>
+                </div>
+              </div>
+              <div class="profile-status">
+                <span class="status-indicator online"></span>
+                <span>2026-2학기 족보 제작 가동 중</span>
+              </div>
+            </div>
+
+            <div class="profile-info">
+              <h2 class="profile-name">이병훈 <span class="profile-badge">Undergraduate</span></h2>
+              <p class="profile-sub">고려대학교 | 족보 제작 & 데이터 분석 전문</p>
+              
+              <div class="profile-tags">
+                <span class="tag">#고려대_크림슨</span>
+                <span class="tag">#A+제조기</span>
+                <span class="tag">#완벽주의</span>
+                <span class="tag">#데이터시각화</span>
+              </div>
+
+              <div class="quick-contact-box">
+                <div class="contact-row">
+                  <i class="fa-regular fa-envelope"></i>
+                  <span class="contact-text email-display">korea_student@korea.ac.kr</span>
+                  <button class="mini-copy-btn copy-email-btn" data-email="korea_student@korea.ac.kr" title="복사">
+                    <i class="fa-regular fa-copy"></i>
+                  </button>
+                </div>
+                <div class="contact-row">
+                  <i class="fa-solid fa-location-dot"></i>
+                  <span>서울특별시 성북구 안암로 145 (고려대학교)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Strengths Section (핵심 역량 3가지) -->
+    <section class="section" id="strengths">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-tag">CORE STRENGTHS</span>
+          <h2 class="section-title">족보 제작 전문 3대 핵심 역량</h2>
+          <p class="section-sub">단순 요약이 아닌, 출제자의 시각에서 재구성한 고순도 지식 엔지니어링</p>
+        </div>
+
+        <div class="strengths-grid">
+          <!-- Strength 1 -->
+          <div class="card strength-card glass-panel">
+            <div class="card-icon-box crimson-bg">
+              <i class="fa-solid fa-compress-arrows-alt"></i>
+            </div>
+            <h3 class="card-title">1. 고밀도 정보 압축 & 시각화</h3>
+            <p class="card-desc">
+              수백 페이지의 강의 슬라이드와 전공 서적을 직관적인 1장 도식과 알고리즘 플로우차트로 압축합니다. 텍스트 나열을 배제하고 인지 부하를 최소화한 레이아웃을 설계합니다.
+            </p>
+            <ul class="strength-list">
+              <li><i class="fa-solid fa-check"></i> 핵심 공식 및 파라미터 직관적 컬러 하이라이팅</li>
+              <li><i class="fa-solid fa-check"></i> 복잡한 메커니즘/수식 유도 과정 단계별 도식화</li>
+            </ul>
+          </div>
+
+          <!-- Strength 2 -->
+          <div class="card strength-card glass-panel">
+            <div class="card-icon-box crimson-bg">
+              <i class="fa-solid fa-bullseye"></i>
+            </div>
+            <h3 class="card-title">2. 기출 경향 역공학 (Reverse-Eng)</h3>
+            <p class="card-desc">
+              역대 중간/기말 족보와 교수님의 강조 어조, 과제 빈출 문항을 종합 분석하여 실제 시험에 반드시 출제될 킬러 문항과 함정 선지를 사전에 완벽히 예측합니다.
+            </p>
+            <ul class="strength-list">
+              <li><i class="fa-solid fa-check"></i> 교수님별 출제 스타일 및 빈출 유형 완벽 데이터베이스화</li>
+              <li><i class="fa-solid fa-check"></i> 오답률 80% 이상의 함정 포인트 사전 경고 노트 삽입</li>
+            </ul>
+          </div>
+
+          <!-- Strength 3 -->
+          <div class="card strength-card glass-panel">
+            <div class="card-icon-box crimson-bg">
+              <i class="fa-solid fa-shield-halved"></i>
+            </div>
+            <h3 class="card-title">3. 무결점 검증 (Zero-Defect)</h3>
+            <p class="card-desc">
+              솔루션 매뉴얼과의 1:1 대조 및 유효숫자, 부호, 물리 단위까지 엄격히 교차 검증합니다. 잘못된 족보로 인한 감점을 원천 차단하는 신뢰도 100%의 풀이를 제공합니다.
+            </p>
+            <ul class="strength-list">
+              <li><i class="fa-solid fa-check"></i> 유효숫자 규칙 및 계산 중간 가드 디지트 철저 적용</li>
+              <li><i class="fa-solid fa-check"></i> 공식 풀이 매뉴얼 원문 고해상도 교차 검증 시스템</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section class="section alt-bg" id="about">
+      <div class="section-container">
+        <div class="about-grid">
+          <div class="about-summary glass-panel">
+            <span class="section-tag">ABOUT ME</span>
+            <h2 class="section-title">"시험장 가기 전, 마지막 10분은 <br>이 요약본 하나면 충분합니다."</h2>
+            <div class="about-text">
+              <p>
+                안녕하세요! 체계적인 정리와 데이터 기반 정보 압축에 진심인 고려대학교 학부생 <strong>이병훈</strong>입니다.
+              </p>
+              <p>
+                매 학기 방대한 시험 범위 앞에서 혼란스러워하는 학우들을 위해, 핵심만 꿰뚫는 고밀도 족보와 과제 솔루션을 제작해 왔습니다. 
+                단순 암기가 아닌 원리 이해 중심의 체계화, 그리고 100% 무결점 정답률을 추구합니다.
+              </p>
+              <p>
+                데이터 과학, 인공지능, 화학 및 정량 분석 등 다양한 전공 과목에서 입증된 요약 제작 노하우를 바탕으로, 복잡한 문제를 가장 명쾌하게 풀어내는 문제 해결력을 발휘합니다.
+              </p>
+            </div>
+
+            <div class="badge-container">
+              <span class="skill-badge"><i class="fa-solid fa-pen-nib"></i> Markdown / LaTeX 마스터</span>
+              <span class="skill-badge"><i class="fa-solid fa-chart-pie"></i> 데이터 시각화 & 구조화</span>
+              <span class="skill-badge"><i class="fa-solid fa-code"></i> Python / Data Science</span>
+              <span class="skill-badge"><i class="fa-solid fa-calculator"></i> 화학 & 수리 계산 검증</span>
+            </div>
+          </div>
+
+          <div class="about-quote-box glass-panel">
+            <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+            <h3 class="quote-title">족보 제작의 3원칙</h3>
+            <div class="principle-item">
+              <div class="num-circle">1</div>
+              <div>
+                <strong>군더더기 제로</strong>
+                <p>출제되지 않는 불필요한 설명은 가차 없이 덜어냅니다.</p>
+              </div>
+            </div>
+            <div class="principle-item">
+              <div class="num-circle">2</div>
+              <div>
+                <strong>직관적 시각 레이아웃</strong>
+                <p>페이지를 넘기지 않고도 전체 개념의 맥락이 한눈에 파악됩니다.</p>
+              </div>
+            </div>
+            <div class="principle-item">
+              <div class="num-circle">3</div>
+              <div>
+                <strong>실전 답안 맞춤 서술</strong>
+                <p>부분 점수까지 놓치지 않는 교수님 맞춤형 답안 작성 양식을 탑재합니다.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education & Activity Timeline -->
+    <section class="section" id="timeline">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-tag">HISTORY & ACTIVITIES</span>
+          <h2 class="section-title">학력 및 활동 타임라인</h2>
+          <p class="section-sub">지식을 축적하고 가치를 나누어 온 발자취</p>
+        </div>
+
+        <div class="timeline">
+          <!-- Item 1 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content glass-panel">
+              <div class="timeline-date">2026.03 ~ 현재</div>
+              <h3 class="timeline-title">고려대학교 (Korea University) 학부 재학</h3>
+              <p class="timeline-place">서울 안암캠퍼스</p>
+              <p class="timeline-desc">
+                • <strong>데이터과학과인공지능</strong> 등 심화 전공 트랙 수강<br>
+                • 머신러닝/딥러닝 모델 아키텍처 및 통계적 학습 이론(ESL) 스터디 리딩<br>
+                • 학기별 전공 핵심 요약본 제작 및 학우 대상 공유 세션 진행
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content glass-panel">
+              <div class="timeline-date">2025.09 ~ 2025.12</div>
+              <h3 class="timeline-title">전공 심화 스터디 리더 & 족보 제작 총괄</h3>
+              <p class="timeline-place">교내 스터디 그룹</p>
+              <p class="timeline-desc">
+                • 분석화학 및 기기분석(Skoog/Harris) 솔루션 핸드북 제작<br>
+                • 유효숫자 오차 분석 매뉴얼 정립으로 스터디원 전원 A학점 달성 견인<br>
+                • 고해상도 수식/도표 캡처 기반 고품질 PDF 아카이브 시스템 구축
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content glass-panel">
+              <div class="timeline-date">2024.03 ~ 2025.06</div>
+              <h3 class="timeline-title">학술 자료 표준화 & 아카이빙 프로젝트</h3>
+              <p class="timeline-place">개인 연구 및 아카이빙</p>
+              <p class="timeline-desc">
+                • 기출문제 패턴 분류 및 난이도별 태그화 시스템 도입<br>
+                • 시험 직전 30분 마인드맵형 요약 치트시트(Cheat Sheet) 포맷 개발<br>
+                • 누적 100건 이상의 풀이 피드백 및 오류 검증 수행
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Portfolio / 족보 쇼케이스 -->
+    <section class="section alt-bg" id="portfolio">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-tag">FEATURED ARCHIVES</span>
+          <h2 class="section-title">대표 제작 족보 & 요약집 컬렉션</h2>
+          <p class="section-sub">엄격한 검증을 통과한 고품질 요약 아카이브 예시</p>
+        </div>
+
+        <div class="portfolio-grid">
+          <!-- Item 1 -->
+          <div class="portfolio-card glass-panel">
+            <div class="card-thumb crimson-gradient-bg">
+              <i class="fa-solid fa-brain"></i>
+              <span class="thumb-badge">적중률 99%</span>
+            </div>
+            <div class="portfolio-body">
+              <div class="portfolio-tags">
+                <span class="p-tag">데이터과학</span>
+                <span class="p-tag">인공지능</span>
+                <span class="p-tag">MLP</span>
+              </div>
+              <h3 class="portfolio-title">데이터과학과 인공지능 기말 대비 마스터팩</h3>
+              <p class="portfolio-desc">
+                퍼셉트론, 역전파 알고리즘 수식 증명부터 ESL 통계학습 핵심 요점까지 일목요연하게 15페이지로 완전 압축.
+              </p>
+              <div class="portfolio-footer">
+                <span class="pf-info"><i class="fa-regular fa-file-pdf"></i> 15 Pages PDF</span>
+                <button class="preview-btn" onclick="openArchiveModal('데이터과학과 인공지능 마스터팩', '퍼셉트론 유도, MLP 오차역전파, 손실함수 경사하강법 계산, 기출 변형 5문항 수록')">
+                  미리보기 <i class="fa-solid fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="portfolio-card glass-panel">
+            <div class="card-thumb dark-crimson-bg">
+              <i class="fa-solid fa-flask-vial"></i>
+              <span class="thumb-badge">오차 0.00%</span>
+            </div>
+            <div class="portfolio-body">
+              <div class="portfolio-tags">
+                <span class="p-tag">분석화학</span>
+                <span class="p-tag">정량분석</span>
+                <span class="p-tag">솔루션</span>
+              </div>
+              <h3 class="portfolio-title">분석화학 II 계산 공식 & 솔루션 바이블</h3>
+              <p class="portfolio-desc">
+                Harris 교재 공식 솔루션 교차 검증 완료. 유효숫자 판별법, 적정 곡선 계산, 평형 계산 단계별 풀이 완벽 가이드.
+              </p>
+              <div class="portfolio-footer">
+                <span class="pf-info"><i class="fa-regular fa-file-pdf"></i> 22 Pages PDF</span>
+                <button class="preview-btn" onclick="openArchiveModal('분석화학 II 솔루션 바이블', '산염기 적정, EDTA 착물 형성 평형, 전기화학 전지 전위 계산, 유효숫자 주의사항 총정리')">
+                  미리보기 <i class="fa-solid fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="portfolio-card glass-panel">
+            <div class="card-thumb subtle-crimson-bg">
+              <i class="fa-solid fa-microscope"></i>
+              <span class="thumb-badge">빈출 요약</span>
+            </div>
+            <div class="portfolio-body">
+              <div class="portfolio-tags">
+                <span class="p-tag">기기분석</span>
+                <span class="p-tag">스펙트럼</span>
+                <span class="p-tag">Skoog</span>
+              </div>
+              <h3 class="portfolio-title">기기분석학 원리 & 스펙트럼 해석 치트시트</h3>
+              <p class="portfolio-desc">
+                분광광도법, NMR, 크로마토그래피 핵심 장치 구조와 피크 해석 알고리즘을 1장의 대형 인포그래픽으로 일원화.
+              </p>
+              <div class="portfolio-footer">
+                <span class="pf-info"><i class="fa-regular fa-file-pdf"></i> Cheat Sheet</span>
+                <button class="preview-btn" onclick="openArchiveModal('기기분석학 치트시트', 'UV-Vis 흡광도 계산식(Beer-Lambert), 크로마토그래피 단수(N) 및 분리능(Rs) 계산 공식 집대성')">
+                  미리보기 <i class="fa-solid fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact & Quick Links Section -->
+    <section class="section" id="contact">
+      <div class="section-container">
+        <div class="contact-box glass-panel">
+          <div class="contact-header">
+            <span class="section-tag">GET IN TOUCH</span>
+            <h2 class="section-title">족보 제작 의뢰 및 스터디 문의</h2>
+            <p class="section-sub">
+              과목별 맞춤 요약본 제작 협업, 스터디 참여, 또는 학술 관련 문의는 언제든 환영합니다!
+            </p>
+          </div>
+
+          <div class="contact-methods">
+            <div class="contact-method-card">
+              <div class="method-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div class="method-info">
+                <div class="method-label">이메일 주소</div>
+                <div class="method-value email-display">korea_student@korea.ac.kr</div>
+              </div>
+              <button class="btn btn-crimson-outline copy-email-btn" data-email="korea_student@korea.ac.kr">
+                <i class="fa-regular fa-copy"></i>
+                <span>복사</span>
+              </button>
+            </div>
+
+            <div class="contact-links-grid">
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="link-card">
+                <i class="fa-brands fa-github"></i>
+                <div class="link-text">
+                  <strong>GitHub</strong>
+                  <span>깃허브 저장소 방문</span>
+                </div>
+                <i class="fa-solid fa-arrow-up-right-from-square external-icon"></i>
+              </a>
+
+              <a href="https://notion.so" target="_blank" rel="noopener noreferrer" class="link-card">
+                <i class="fa-solid fa-book-open"></i>
+                <div class="link-text">
+                  <strong>Notion Archive</strong>
+                  <span>온라인 노션 족보 서고</span>
+                </div>
+                <i class="fa-solid fa-arrow-up-right-from-square external-icon"></i>
+              </a>
+
+              <a href="mailto:korea_student@korea.ac.kr" class="link-card">
+                <i class="fa-solid fa-paper-plane"></i>
+                <div class="link-text">
+                  <strong>Direct Mail</strong>
+                  <span>메일 앱 바로 열기</span>
+                </div>
+                <i class="fa-solid fa-arrow-up-right-from-square external-icon"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-left">
+        <div class="footer-logo">
+          <span class="crimson-dot"></span>
+          <span>KU.ARCHIVE | 이병훈</span>
+        </div>
+        <p class="footer-copy">
+          Korea University Crimson (#862633) Inspired Academic Portfolio.<br>
+          © 2026 이병훈. All rights reserved.
+        </p>
+      </div>
+
+      <div class="footer-right">
+        <a href="#hero" class="back-to-top" aria-label="맨 위로 가기">
+          <i class="fa-solid fa-chevron-up"></i>
+          <span>맨 위로</span>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification for Copy Action -->
+  <div class="toast" id="toast">
+    <i class="fa-solid fa-circle-check"></i>
+    <span id="toastMsg">클립보드에 복사되었습니다!</span>
+  </div>
+
+  <!-- Archive Preview Modal -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal-card glass-panel">
+      <div class="modal-header">
+        <h3 id="modalTitle">족보 미리보기</h3>
+        <button class="modal-close" id="modalClose"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-badge"><i class="fa-solid fa-shield-halved"></i> 검증 완료된 공식 요약집</div>
+        <p id="modalContent" class="modal-summary-text"></p>
+        <div class="sample-box">
+          <div class="sample-header">
+            <span><i class="fa-solid fa-file-lines"></i> 핵심 요약 프리뷰 샘플</span>
+            <span class="crimson-tag">A+ High-Density</span>
+          </div>
+          <div class="sample-body">
+            <p><strong>[공식 유도 핵심]</strong></p>
+            <p class="code-snippet">E = E° - (0.05916 / n) · log(Q)  [25 °C 기준 무결점 적용]</p>
+            <p><strong>[빈출 함정]</strong> 유효숫자는 로그 연산 후 소수점 자리수로 보존할 것.</p>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" id="modalCloseBtn">닫기</button>
+        <button class="btn btn-primary" onclick="triggerToast('정식 배포본 요청 메일이 준비되었습니다.')">
+          <i class="fa-solid fa-download"></i> 전체 파일 요청
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
